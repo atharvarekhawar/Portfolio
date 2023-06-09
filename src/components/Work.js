@@ -108,6 +108,10 @@ const Work = () => {
                   <FaLink fill="#FF56F6"/>
                   <a href="https://fascinating-starship-3236f7.netlify.app"  target="_blank" rel="noreferrer" className="text-white">Live</a>
                 </div>
+                <div className="flex justify-center items-center">
+                  <DiOpensource fill="#FF56F6"/>
+                  <a href="https://github.com/atharvarekhawar/Ecomzy" target="_blank" rel="noreferrer"  >Source Code</a>
+                </div>
               </div>
             </div>
           </motion.div>
