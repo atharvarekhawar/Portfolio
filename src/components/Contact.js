@@ -1,4 +1,4 @@
-import React,{useRef,useState} from "react";
+import React,{useRef} from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from '@emailjs/browser';
@@ -9,8 +9,6 @@ const Contact = () => {
 
   
 const form = useRef();
-
-// const [loading,setLoading] = useState(false);
 
 
 const submitHandler = (e) => {
