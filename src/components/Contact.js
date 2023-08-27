@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React,{useRef,useState} from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from '@emailjs/browser';
@@ -10,13 +10,16 @@ const Contact = () => {
   
 const form = useRef();
 
+// const [loading,setLoading] = useState(false);
+
 
 const submitHandler = (e) => {
   e.preventDefault();
- 
-
+  
+  const toastId = toast.loading("Sending...")
   emailjs.sendForm('service_zsdzw9t', 'template_y3j5i8g', form.current, 'TmJOJjp64KSbZO-1Y')
     .then((result) => {
+        toast.dismiss(toastId);
         toast.success("Message sent successfully")
         console.log(result);
     }, (error) => {
