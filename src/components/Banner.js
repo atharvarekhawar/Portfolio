@@ -22,7 +22,12 @@ const Banner = () => {
           >
             <span className="mr-4 text-white">I am a </span>
             <TypeAnimation
-              sequence={["Full Stack Developer.", 2000, "Competitive Coder.", 2000]}
+              sequence={[
+                "Full Stack Developer.",
+                2000,
+                "Competitive Coder.",
+                2000,
+              ]}
               speed={50}
               className="text-accent"
               wrapper="span"
@@ -37,11 +42,34 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-4"
             >
-              Based in India and have keen interest in{" "}
-              <span className="font-bold text-accent">MERN </span>
-              stack and{" "}
+              Based in India and have keen interest in building{" "}
+              <span className="font-bold text-accent">Real world systems </span>
+              using{" "}
               <span className="font-bold text-accent">
-                Blockchain Technology
+                <TypeAnimation
+                  sequence={[
+                    "Next.js",
+                    2000,
+                    "React.js",
+                    2000,
+                    "Typescript",
+                    2000,
+                    "Tailwind",
+                    2000,
+                    "Node.js",
+                    2000,
+                    "Express.js",
+                    2000,
+                    "Prisma",
+                    2000,
+                    "and many more.",
+                    2000,
+                  ]}
+                  speed={50}
+                  className="text-accent"
+                  wrapper="span"
+                  repeat={Infinity}
+                />
               </span>
             </motion.p>
           </div>
@@ -63,7 +91,6 @@ const Banner = () => {
                 Portfolio
               </button>
             </Link>
-            
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.7)}

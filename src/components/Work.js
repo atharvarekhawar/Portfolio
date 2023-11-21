@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Img1 from "../assets/ED-TECH.png";
-import Img2 from "../assets/Sumz.png";
-import Img3 from "../assets/carhub.png";
+import Img2 from "../assets/FormHub.png";
+import Img3 from "../assets/Animhub.png";
 import {DiOpensource} from 'react-icons/di'
 import {FaLink} from 'react-icons/fa'
 
@@ -28,7 +28,7 @@ const Work = () => {
                 Welcome to my project section, where you'll find examples of my
                 work as a React developer. I specialize in creating dynamic and
                 responsive web applications using cutting-edge technologies like
-                React, Tailwind CSS, API integration, and Redux.
+                Next.js, React, Tailwind CSS, Node.js ,Express.js, Redux and many more.
               </p>
             </div>
             <div className="group relative w-[60%] h-[135px] md:h-[200px] lg:w-[90%] lg:h-[240px] overflow-hidden border-2 border-white/50 rounded-xl">
@@ -69,23 +69,23 @@ const Work = () => {
               <div className="group-hover:bg-black/80 w-full h-[270px] absolute z-40 transition-all duration-300"></div>
               <img
                 src={Img2}
-                alt="Sumz"
+                alt="FormHub"
                 className="group-hover:scale-125 transition-all duration-500 h-[135px] w-full sm:h-auto"
               />
               <div className="absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-24 group-hover:bottom-16 transition-all duration-500 z-50">
                 <span className="text-gradient sm:text-2xl">Next.js</span>
               </div>
               <div className="absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-14 group-hover:bottom-10 transition-all duration-700 z-50">
-                <span className="text-xl sm:text-3xl text-white">Sumz</span>
+                <span className="text-xl sm:text-3xl text-white">FormHub</span>
               </div>
               <div className=" flex gap-x-4 absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-6 group-hover:bottom-2 transition-all duration-700 z-50">
                 <div className="flex justify-center items-center ">
                   <FaLink fill="#FF56F6"/>
-                  <a href="https://snap-sumz.vercel.app/" target="_blank" className="text-white" rel="noreferrer">Live</a>
+                  <a href="https://formhhub.vercel.app/" target="_blank" className="text-white" rel="noreferrer">Live</a>
                 </div>
                 <div className="flex justify-center items-center">
                   <DiOpensource fill="#FF56F6"/>
-                  <a href="https://github.com/atharvarekhawar/SnapSum" target="_blank" rel="noreferrer">Code</a>
+                  <a href="https://github.com/atharvarekhawar/Form-builder" target="_blank" rel="noreferrer">Code</a>
                 </div>
               </div>
               
@@ -94,23 +94,19 @@ const Work = () => {
               <div className="group-hover:bg-black/80 w-full h-[270px] absolute z-40 transition-all duration-300"></div>
               <img
                 src={Img3}
-                alt="Carhub"
+                alt="AnimHub"
                 className="group-hover:scale-125 transition-all duration-500 h-[135px] w-full sm:h-auto"
               />
               <div className="absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-24 group-hover:bottom-16 transition-all duration-500 z-50">
-                <span className="text-gradient sm:text-2xl">Next.js</span>
+                <span className="text-gradient sm:text-2xl">Hactoberfest Project</span>
               </div>
               <div className="absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-14 group-hover:bottom-10 transition-all duration-700 z-50">
-                <span className="text-xl sm:text-3xl text-white">Carhub</span>
+                <span className="text-xl sm:text-3xl text-white">Animhub</span>
               </div>
               <div className=" flex gap-x-4 absolute -bottom-full left-6 sm:left-12 group-hover:sm:bottom-6 group-hover:bottom-2 transition-all duration-700 z-50">
                 <div className="flex justify-center items-center">
                   <FaLink fill="#FF56F6"/>
-                  <a href="https://car-hub-nine-mu.vercel.app/"  target="_blank" rel="noreferrer" className="text-white">Live</a>
-                </div>
-                <div className="flex justify-center items-center">
-                  <DiOpensource fill="#FF56F6"/>
-                  <a href="https://github.com/atharvarekhawar/CarHub" target="_blank" rel="noreferrer">Code</a>
+                  <a href="https://animhub.dev/"  target="_blank" rel="noreferrer" className="text-white">Live</a>
                 </div>
               </div>
             </div>
