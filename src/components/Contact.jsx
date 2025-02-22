@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import {useRef} from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from '@emailjs/browser';
@@ -27,14 +27,14 @@ const submitHandler = (e) => {
 };
 
   return (
-    <div id="contact" className="  py-4 sm:py-6 md:py-10 lg:py-16 lg:section md:my-20 ">
+    <div id="contact" className="  py-4 sm:py-6 md:py-10 lg:py-16 lg:section md:my-20 min-h-[1000px] ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 flex justify-start items-center"
           >
             <div >
@@ -42,7 +42,7 @@ const submitHandler = (e) => {
                 get in touch
               </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br />
+                Let&apos;s work <br />
                 together{" "}
               </h2>
             </div>
@@ -51,7 +51,7 @@ const submitHandler = (e) => {
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 border rounded-2xl flex flex-col gap-y-4 pb-20 p-10 items-start "
             ref={form}
             onSubmit={submitHandler}

@@ -48,6 +48,7 @@
     #b936ee 100%,
     #ff56f6 117.04%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

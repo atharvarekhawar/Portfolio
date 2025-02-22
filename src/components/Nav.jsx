@@ -1,4 +1,3 @@
-import React from "react";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsBriefcase, BsChatSquare } from "react-icons/bs";
 import { Link } from "react-scroll";

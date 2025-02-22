@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
@@ -13,7 +12,7 @@ const About = () => {
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="mb-2 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               About
@@ -22,7 +21,7 @@ const About = () => {
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="mb-2 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               Me
@@ -32,35 +31,34 @@ const About = () => {
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="font-tertiary text-gradient text-[14px] sm:text-[18px] text-center lg:text-left"
           >
             <p>
-              Welcome to my About Me page ! My name is Atharva and I am a React
-              Developer based in India. I am passionate about coding, and I love
-              to collab with people to explore new technologies.
+              Welcome to my About Me page ! My name is Atharva and I am a
+              Software Engineer based in India. I am passionate about coding,
+              and I love to collab with people to explore new technologies.
             </p>
             <br />
             <p>
-              I started my coding journey at the start of my second year in
-              college, and since then, I have been working hard to hone my
-              skills and grow my knowldege as much as I can.
+              I&apos;m an ambitious and enthusiastic with a keen eye for detail
+              and a dedication to delivering outstanding results. I&apos;m
+              excited to collaborate with like-minded professionals and
+              organizations to create transformative digital solutions. If
+              you&apos;re interested in working together or discussing web
+              development opportunities, feel free to connect with me!
             </p>
             <br />
             <p>
-              On next section, you'll find more information about my projects.
-              If you have any questions or would like to get in touch, please
-              don't hesitate to reach out. Thank you for visiting my page!
+              On next section, you&apos;ll find more information about my
+              projects. If you have any questions or would like to get in touch,
+              please don&apos;t hesitate to reach out. Thank you for visiting my
+              page!
             </p>
             <div className="flex-col mx-auto my-6 flex-wrap">
               <Link to="contact" smooth={true}>
                 <button className="btn btn-sm md:btn-lg mr-4 mb-2">
                   Contact me
-                </button>
-              </Link>
-              <Link to="work" smooth={true}>
-                <button className="btn btn-sm md:btn-lg mr-4 mb-2">
-                  Portfolio
                 </button>
               </Link>
             </div>

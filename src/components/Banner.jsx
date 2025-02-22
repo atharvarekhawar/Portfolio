@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -17,29 +16,19 @@ const Banner = () => {
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="mb-4 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
           >
-            <span className="mr-4 text-white">I am a </span>
-            <TypeAnimation
-              sequence={[
-                "Full Stack Developer.",
-                2000,
-                "Competitive Coder.",
-                2000,
-              ]}
-              speed={50}
-              className="text-accent"
-              wrapper="span"
-              repeat={Infinity}
-            />
+            <p className="mr-4 text-white">
+              I am a <span className="text-accent">Software Enginner</span>
+            </p>
           </motion.div>
           <div className="text-[15px] lg:text-[22px]">
             <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="mb-4"
             >
               Based in India and have keen interest in building{" "}
@@ -52,6 +41,8 @@ const Banner = () => {
                     2000,
                     "React.js",
                     2000,
+                    "Javascript",
+                    2000,
                     "Typescript",
                     2000,
                     "Tailwind",
@@ -60,9 +51,13 @@ const Banner = () => {
                     2000,
                     "Express.js",
                     2000,
-                    "Prisma",
+                    "Kafka",
                     2000,
-                    "and many more.",
+                    "Redis",
+                    2000,
+                    "AWS",
+                    2000,
+                    "Docker",
                     2000,
                   ]}
                   speed={50}
@@ -77,7 +72,7 @@ const Banner = () => {
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="flex-col mx-auto mb-8 flex-wrap"
           >
             <Link to="contact" smooth={true}>
@@ -88,7 +83,7 @@ const Banner = () => {
 
             <Link to="work" smooth={true}>
               <button className="btn btn-sm md:btn-lg mr-4 mb-2">
-                Portfolio
+                Projects
               </button>
             </Link>
           </motion.div>
@@ -96,7 +91,7 @@ const Banner = () => {
             variants={fadeIn("up", 0.7)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="flex text-[25px] gap-x-6 max-w-max mx-auto "
           >
             <a
